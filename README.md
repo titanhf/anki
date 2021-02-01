@@ -1,17 +1,10 @@
-Anki
--------------------------------------
+# Anki
 
-This is the development branch of Anki.
+[![Build status](https://badge.buildkite.com/c9edf020a4aec976f9835e54751cc5409d843adbb66d043bd3.svg)](https://buildkite.com/ankitects/anki-ci)
 
-For stable builds, please see https://apps.ankiweb.net.
+This repo contains the source code for the computer version of Anki.
 
-For non-developers who want to try this development code,
-the easiest way is to use a binary package - please see
-https://anki.tenderapp.com/discussions/beta-testing
+If you'd like to try development builds of Anki but don't feel comfortable
+building the code, please see https://betas.ankiweb.net/#/
 
-To run from source, please see README.development.
-
-If you are interested in contributing changes to Anki, please
-see README.contributing before you begin work.
-
-[![Build Status](https://travis-ci.org/dae/anki.svg?branch=master)](https://travis-ci.org/dae/anki)
+For more information on building, please see [Development](./docs/development.md).

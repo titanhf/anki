@@ -1,10 +1,6 @@
-*.pyc
-*~
-*.mo
-*\#
-.*.swp
-.coverage
-aqt/forms
-locale
-tools/runanki.system
-anki/buildhash.py
+__pycache__
+.DS_Store
+/bazel-*
+anki.prof
+target
+user.bazelrc

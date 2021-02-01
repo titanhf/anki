@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Anki</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/anki.png</normaloff>:/icons/anki.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>1</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>667</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>QT_ACCEL_HELP</string>
+    </property>
+    <addaction name="actionDocumentation"/>
+    <addaction name="separator"/>
+    <addaction name="actionDonate"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>QT_ACCEL_EDIT</string>
+    </property>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menuCol">
+    <property name="title">
+     <string>QT_ACCEL_FILE</string>
+    </property>
+    <addaction name="actionSwitchProfile"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>QT_ACCEL_TOOLS</string>
+    </property>
+    <addaction name="actionStudyDeck"/>
+    <addaction name="actionCreateFiltered"/>
+    <addaction name="separator"/>
+    <addaction name="actionFullDatabaseCheck"/>
+    <addaction name="actionCheckMediaDatabase"/>
+    <addaction name="actionEmptyCards"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_ons"/>
+    <addaction name="separator"/>
+    <addaction name="actionNoteTypes"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <addaction name="menuCol"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>QT_ACCEL_EXIT</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>QT_ACCEL_PREFERENCES</string>
+   </property>
+   <property name="statusTip">
+    <string>QT_MISC_CONFIGURE_INTERFACE_LANGUAGE_AND_OPTIONS</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+P</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::PreferencesRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>QT_ACCEL_ABOUT</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutRole</enum>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>QT_ACCEL_UNDO</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionCheckMediaDatabase">
+   <property name="text">
+    <string>QT_ACCEL_CHECK_MEDIA</string>
+   </property>
+   <property name="statusTip">
+    <string>QT_MISC_CHECK_THE_FILES_IN_THE_MEDIA</string>
+   </property>
+  </action>
+  <action name="actionOpenPluginFolder">
+   <property name="text">
+    <string>QT_ACCEL_OPEN_ADDONS_FOLDER</string>
+   </property>
+  </action>
+  <action name="actionDonate">
+   <property name="text">
+    <string>QT_ACCEL_SUPPORT_ANKI</string>
+   </property>
+  </action>
+  <action name="actionDownloadSharedPlugin">
+   <property name="text">
+    <string>QT_ACCEL_BROWSE_AND_INSTALL</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="actionFullDatabaseCheck">
+   <property name="text">
+    <string>QT_ACCEL_CHECK_DATABASE</string>
+   </property>
+  </action>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>QT_ACCEL_GUIDE</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">F1</string>
+   </property>
+  </action>
+  <action name="actionSwitchProfile">
+   <property name="text">
+    <string>QT_ACCEL_SWITCH_PROFILE</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>QT_ACCEL_EXPORT</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>QT_ACCEL_IMPORT</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+I</string>
+   </property>
+  </action>
+  <action name="actionStudyDeck">
+   <property name="text">
+    <string>QT_MISC_STUDY_DECK</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">/</string>
+   </property>
+  </action>
+  <action name="actionEmptyCards">
+   <property name="text">
+    <string>QT_MISC_EMPTY_CARDS</string>
+   </property>
+  </action>
+  <action name="actionCreateFiltered">
+   <property name="text">
+    <string>QT_MISC_CREATE_FILTERED_DECK</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">F</string>
+   </property>
+  </action>
+  <action name="actionNoteTypes">
+   <property name="text">
+    <string>QT_MISC_MANAGE_NOTE_TYPES</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionAdd_ons">
+   <property name="text">
+    <string>QT_MISC_ADDONS</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Shift+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
